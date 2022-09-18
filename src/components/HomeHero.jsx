@@ -4,7 +4,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Home from '../pages/Home'
 import { Link } from 'react-router-dom'
-import Signin from '../pages/Signin'
+import Signin from '../pages/SignIn'
 
 const navigation = [
   { name: 'Product', to: '#' },
