@@ -89,13 +89,13 @@ export default function Navbar() {
 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
 
-                    <Link to="/" className="px-6 py-2 bg-[#4176FF] font-medium text-[#4176FF] rounded-md md:ml-5">
+                    <Link to="/" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
 
                         Start Investing
 
                     </Link>
 
-                    <Link to="/" className="px-6 py-2 font-medium text-white  border-2 border-[#4176FF] rounded-md md:ml-5">
+                    <Link to="/" className="px-6 py-2 font-medium text-[#4176FF]  border-2 border-[#4176FF] rounded-md md:ml-5">
 
                         Signin
 
