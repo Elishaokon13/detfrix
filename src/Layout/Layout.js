@@ -1,20 +1,21 @@
-import React from 'react'
-import About from '../components/molecules/About'
-import { Features } from '../components/molecules/Features/features'
-import Hero from '../components/molecules/Hero'
-import { Navbar } from '../components/molecules/Navbar/navbar'
-import Plan from '../components/molecules/Plan'
-import Service from '../components/molecules/Services'
+import React, { useState } from 'react'
+
+import Header from '../components/molecules/Header'
+
+import NavbarMobile from '../components/molecules/NavbarMobile'
+
+import Home from '../pages/Home'
 
 const Layout = () => {
+  const [Open, setOpen] = useState(false);
+  const handleNav = () => {
+    setOpen(!Open);
+ };
   return (
     <div className='bg-[#CDCBCB] flex flex-col gap-5'>
-      <Navbar/>
-        <Hero/>
-        <Features/>
-        <About/>
-        <Plan/>
-        <Service/>
+        {Open && <NavbarMobile handleNav={handleNav}/>}
+        <Header handleNav={handleNav}/>
+        <Home/>
     </div>
   )
 }
