@@ -13,7 +13,7 @@ function Home() {
             <Navbar />
             <HomeHero />
             <Features />
-            
+            <Plan />
             <Footer />
             
         </div>
