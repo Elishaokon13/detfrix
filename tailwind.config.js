@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      'grotesk': ['grotesk', 'sans-serif'],
+      'roboto': ['roboto', 'sans-serif'],
       'syne': ['syne', 'sans-serif']
     },
     extend: {},

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Testimonals() {
     return (
-<section class="bg-blue-100 ">
+<section class="bg-blue-100 font-[roboto]">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"/>
       <div class="mx-auto max-w-screen-sm">
           <h2 class="text-lg font-semibold text-center text-blue-600">Testimonials</h2>
