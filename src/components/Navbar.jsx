@@ -12,7 +12,7 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="w-full font-[grotesk]">
+        <div className="w-full">
             <nav className="container relative flex flex-wrap items-center justify-between p-2 mx-auto lg:justify-between xl:px-0">
                 {/* Logo  */}
                 <Disclosure>
