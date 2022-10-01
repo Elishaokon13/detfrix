@@ -5,8 +5,8 @@ export default function Testimonals() {
 <section class="bg-blue-100 font-[grotesk]">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"/>
       <div class="mx-auto max-w-screen-sm">
-          <h2 class="mb-4 text-4xl tracking-tight text-center  text-blue-600 ">Testimonials</h2>
-          <p class="mb-8 text-white-500 text-center font-extrabold lg:mb-16 sm:text-xl dark:text-gray-400">What our Clients say about us</p>
+          <h2 class="text-lg font-semibold text-center text-blue-600">Testimonials</h2>
+          <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">What our Clients say about us</p>
       </div> 
       <div class="grid mb-8 lg:mb-12 bg-blue-100 lg:grid-cols-2">
           <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">

@@ -6,11 +6,13 @@ import Features from '../components/Features'
 import Footer from '../components/Footer'
 import Plan from '../components/Plan'
 import Testimonals from '../components/Testimonals'
+import Cookies from '../components/Cookies'
 
 function Home() {
     return (
       <div>
             <Banner />
+            
             <Navbar />
             <HomeHero />
             <Features />
