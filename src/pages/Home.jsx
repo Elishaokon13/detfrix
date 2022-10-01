@@ -11,7 +11,7 @@ import Cookies from '../components/Cookies'
 function Home() {
     return (
       <div>
-            <Banner />
+            
             
             <Navbar />
             <HomeHero />

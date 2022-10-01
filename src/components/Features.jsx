@@ -30,7 +30,7 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="bg-white py-12 font-[grotesk]">
+    <div className="bg-white py-12 font-[serif]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-lg font-semibold text-blue-600">Transactions</h2>
