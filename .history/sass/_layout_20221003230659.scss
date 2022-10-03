@@ -1,0 +1,42 @@
+.dashboard {
+   display: grid;
+   grid-template-columns: 10rem 1fr;
+   grid-template-rows: 75px 1fr 0px;
+   grid-template-areas: "sidenav body";
+   height: 99vh;
+   margin: 0.1rem;
+
+   @media only screen and (max-width: calc(670/16 *1em)) {
+      grid-template-areas: "body";
+      grid-template-columns: 1fr;
+      height: 100vh;
+      margin: 0px;
+   }
+
+   &_sidebar {
+      grid-area: sidenav;
+      @media only screen and (max-width: calc(670/16 *1em)) {
+         display: none;
+      }
+   }
+
+   &_body {
+      grid-area: body;
+   }
+
+   &_header {
+      height: 5rem;
+      border-bottom: 1px solid;
+   }
+   &_content {
+      height: 88.5vh;
+      overflow-x: auto;
+   }
+}
+.portfolio {
+   &-header {
+      height: inherit;
+      padding: 2rem;
+   }
+   &-icon {}
+}
