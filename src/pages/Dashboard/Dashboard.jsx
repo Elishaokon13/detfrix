@@ -4,7 +4,7 @@ function Index() {
         <div className="flex flex-no-wrap">
             {/* Sidebar starts */}
             {/* Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] */}
-            <div className="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex">
+            <div className="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between flex">
                 <div className="px-8">
                     <div className="h-16 w-full flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width={144} height={30} viewBox="0 0 144 30">
