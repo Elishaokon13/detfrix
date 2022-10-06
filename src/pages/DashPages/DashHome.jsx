@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import ReferralBox from "../../components/DashComponents/ReferralBox";
 
 function DashHome() {
-  return (
-    <div>DashHome</div>
-  )
+   return (
+      <div>
+         DashHome
+         <ReferralBox />
+      </div>
+   );
 }
 
-export default DashHome
+export default DashHome;
