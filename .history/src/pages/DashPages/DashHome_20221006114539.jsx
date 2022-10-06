@@ -5,8 +5,7 @@ function DashHome() {
    return (
       <div>
          DashHome
-         {/* for testing purposes */}
-         {/* <ActivityBox /> */}
+         <ActivityBox />
       </div>
    );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function TopNav({ toggle, isToggled }) {
   return (
     <div className='shadow h-[60px] flex items-center justify-between px-[20px] font-[grotesk]'>
