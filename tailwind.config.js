@@ -8,7 +8,14 @@ module.exports = {
       'roboto': ['roboto', 'sans-serif'],
       'syne': ['syne', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      transitionProperty: {
+        top: "top",
+        left: "left",
+        height: "height",
+        
+      },
+    },
   },
   plugins: [],
 }
