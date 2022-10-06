@@ -1,8 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 
-import Home from '../pages/Home'
 import { Link } from 'react-router-dom'
-import Signin from '../pages/SignIn'
 
 const navigation = [
   { name: 'Product', to: '#' },

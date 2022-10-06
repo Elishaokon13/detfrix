@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
-import Logo from "../assets/image/icon.svg";
+import Logo from "../../assets/image/icon.svg";
 
 
 export default function Navbar() {
