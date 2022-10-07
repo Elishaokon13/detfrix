@@ -1,5 +1,6 @@
 import { Link, useMatch,  } from "react-router-dom";
-
+import { FaWallet } from "react-icons/fa";
+import { RiLuggageDepositFill, RiExchangeDollarFill } from "react-icons/ri";
 
 const Sidebar = ({ toggle, isToggled }) => {
   const handleToggle = () => {
@@ -23,19 +24,23 @@ const Sidebar = ({ toggle, isToggled }) => {
 
   const navArr = [
     {
-      name: "Portflio",
+      name: "Portfolio",
+      icon: <FaWallet />,
       to: "",
     },
     {
       name: "Deposit",
+      icon: <RiLuggageDepositFill />,
       to: "deposit",
     },
     {
       name: "Invest",
+      icon: <RiExchangeDollarFill />,
       to: "invest",
     },
     {
       name: "Withdraw",
+      icon: <RiExchangeDollarFill />,
       to: "withdraw",
     }
   ];
@@ -50,10 +55,12 @@ const Sidebar = ({ toggle, isToggled }) => {
       <Link to='/dashboard/'>Detfrix</Link>
       </div>
       <div className="mt-[10px] md:mt-[20px] flex flex-col w-full">
-        {navArr.map(({ name, to }) => (
+        {navArr.map(({ icon, name, to }) => (
           <CustomLink to={to} key={to}>
             <div className="flex text-[15px] items-center font-[grotesk]">
-              <div> {name}</div>
+              <div>
+                {icon}
+                {name}</div>
             </div>
           </CustomLink>
         ))}
