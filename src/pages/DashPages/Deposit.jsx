@@ -2,7 +2,7 @@ import React from 'react'
 
 function Deposit() {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col bg-blue-100 h-screen items-center justify-center'>
       <div className='text-[20px] font-[grotesk] font-[700]'>Deposit</div>
       <div className='mt-[20px] flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center'>
