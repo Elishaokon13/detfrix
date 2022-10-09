@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
-import Logo from "../../assets/image/icon.svg";
+import Logo from "../../assets/image/DETFRIX.png";
 
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ export default function Navbar() {
                             <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                                 <Link to="/" className="flex items-center space-x-2 text-2xl font-medium text-[#4176FF] dark:text-blue-100">
 
-                                    <img src={Logo} alt="logo" className="w-10 h-10" />
+                                    <img src={Logo} alt="logo" className="w-40" />
 
 
                                 </Link>

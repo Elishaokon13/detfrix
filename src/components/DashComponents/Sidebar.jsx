@@ -1,4 +1,6 @@
 import { Link, useMatch,  } from "react-router-dom";
+import { FaWallet } from "react-icons/fa";
+import { RiLuggageDepositFill, RiExchangeDollarFill } from "react-icons/ri";
 
 const Sidebar = ({ toggle, isToggled }) => {
   const handleToggle = () => {
@@ -22,19 +24,23 @@ const Sidebar = ({ toggle, isToggled }) => {
 
   const navArr = [
     {
-      name: "Portflio",
+      name: "Portfolio",
+      icon: <FaWallet />,
       to: "",
     },
     {
       name: "Deposit",
+      icon: <RiLuggageDepositFill />,
       to: "deposit",
     },
     {
       name: "Invest",
+      icon: <RiExchangeDollarFill />,
       to: "invest",
     },
     {
       name: "Withdraw",
+      icon: <RiExchangeDollarFill />,
       to: "withdraw",
     }
   ];
@@ -42,17 +48,19 @@ const Sidebar = ({ toggle, isToggled }) => {
     <div
       className={`${
         toggle ? "left-0 z-30 lg:left-0" : "left-[-100%] lg:left-0"
-      }  absolute lg:relative min-w-[240px] max-w-[240px] max-h-screen min-h-screen transition-left  flex flex-col   bg-blue-500 pt-[10px]
+      }  absolute lg:relative min-w-[120px] max-w-[240px] max-h-screen min-h-screen transition-left  flex flex-col   bg-blue-500 pt-[10px]
    `}
     >
-      <div className="pl-[30px] font-[grotesk] font-[800] text-[35px] text-white">
-      <Link to='/dashboard/'>  Detfrix</Link>
+      <div className="pl-[20px] font-[grotesk] font-[800] text-[25px] text-white">
+      <Link to='/dashboard/'>Detfrix</Link>
       </div>
       <div className="mt-[10px] md:mt-[20px] flex flex-col w-full">
-        {navArr.map(({ name, to }) => (
+        {navArr.map(({ icon, name, to }) => (
           <CustomLink to={to} key={to}>
-            <div className="flex items-center font-[grotesk]">
-              <div> {name}</div>
+            <div className="flex text-[15px] items-center font-[grotesk]">
+              <div>
+                {icon}
+                {name}</div>
             </div>
           </CustomLink>
         ))}
