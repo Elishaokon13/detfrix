@@ -14,7 +14,7 @@ function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignIn />} />
           <Route path="*" element={<NotFound />} />
           <Route path='/dashboard/' element={<DashBoardLayout/>} >
             <Route path='' element={<DashHome/>} />
