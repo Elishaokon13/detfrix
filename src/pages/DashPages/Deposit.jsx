@@ -21,10 +21,10 @@ function Deposit() {
           <div className='text-[15px] font-[grotesk] font-[700]'>Payment Method</div>
           <div className='mt-[10px] flex items-center justify-center'>
             <div className='bg-[#F5F5F5] h-[40px] w-[130px] flex items-center justify-center'>
-              <div className='text-[20px] font-[grotesk] font-[700]'>2219533760</div>
+              <div className='text-[20px] font-[grotesk] font-[700]'>2361074768</div>
             </div>
-            <div className='bg-[#F5F5F5] h-[40px] w-[80px] flex items-center  justify-center ml-8'>
-              <div className='text-[20px] font-[grotesk] font-[700] '>UBA</div>
+            <div className='bg-[#F5F5F5] h-[40px] w-[100px] flex items-center  justify-center ml-8'>
+              <div className='text-[20px] font-[grotesk] font-[700] '>PAGA MFB</div>
             </div>
           </div>
         </div>
