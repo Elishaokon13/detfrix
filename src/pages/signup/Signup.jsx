@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/image/DETFRIX.png";
+import Logo from "../../assets/image/DETFRIX.svg";
 
 function Signup() {
     return (
@@ -8,7 +8,7 @@ function Signup() {
         <section class="bg-blue-100 h-screen  ">
       <div class="flex flex-col items-center font-[grotesk] justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 ">
-          <img class="w-18 h-8 mr-2 mt-8" src={Logo} alt="logo" />
+          <img class="w-8 h-8 mr-2 mt-8" src={Logo} alt="logo" />
           <p className="mt-8">Detfrix</p>
         </a>
         <div class="w-full bg-white  rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 ">
