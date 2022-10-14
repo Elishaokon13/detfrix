@@ -1,3 +1,4 @@
+import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import DashHome from './pages/DashPages/DashHome';
 import Deposit from './pages/DashPages/Deposit';
@@ -9,7 +10,8 @@ import SignIn from './pages/SignIn'
 import DashBoardLayout from './Template/DashBoardLayout';
 
 function App() {
-  return (
+
+     return (
     <>
     <Router>
         <Routes>
@@ -27,6 +29,8 @@ function App() {
 
     </>
   );
+  
+ 
 }
 
 export default App;

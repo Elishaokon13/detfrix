@@ -5,10 +5,13 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@heroicons/react": "^2.0.11",
+    "@okta/okta-auth-js": "^7.0.1",
+    "@okta/okta-react": "^6.7.0",
     "@tailwindcss/forms": "^0.5.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.1.2",
     "firebase": "^9.10.0",
     "react": "^18.2.0",
     "react-crypto-icons": "^1.0.5",
