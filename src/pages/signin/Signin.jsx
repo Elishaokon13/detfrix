@@ -10,14 +10,14 @@ import { useEffect } from 'react'
 const styles = {
     signinContainer: 'flex justify-center items-center sm:h-screen',
     container: 'sm:flex sm:h-[550px] w-screen sm:w-[800px] shadow-2xl',
-    bgGradient: 'w-full px-10 h-full absolute opacity-[70%] top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-[#800080] via-[#EDEDED] to-[#fff] bg-opacity-8',
+    bgGradient: 'w-full px-10 h-full absolute opacity-[70%] top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-[#2196F3] via-[#EDEDED] to-[#fff] bg-opacity-8',
     leftSection: 'hidden sm:block bg-signIn bg-cover h-auto sm:w-[50%] text-white bg-no-repeat relative',
-    rightSection: 'w-full sm:w-[50%] bg-signIn sm:bg-protection space-y-1 bg-cover sm:bg-contain h-[90vh] sm:h-[90%] bg-no-repeat sm:py-5 sm:px-10 text-[#800080] flex items-center justify-center relative',
+    rightSection: 'w-full sm:w-[50%] bg-signIn sm:bg-protection space-y-1 bg-cover sm:bg-contain h-[90vh] sm:h-[90%] bg-no-repeat sm:py-5 sm:px-10 text-[#2196F3] flex items-center justify-center relative',
     imgContainer: 'flex flex-col items-center justify-center relative -space-y-5 h-[90%]',
     slideContainer: 'px-2 text-sm uppercase absolute bottom-5 left-0 leading-7 font-semibold text-center',
-    footer: 'text-slate-50 md:text-[#800080] text-[10px] text-center bottom-0 md:-bottom-12 right-5 left-5 absolute',
-    forgotText: 'text-[#800080] cursor-pointer hover:text-slate-100 sm:hover:text-slate-500',
-    signupLink: 'text-[#800080] underline cursor-pointer hover:text-slate-100 sm:hover:text-slate-500'
+    footer: 'text-slate-50 md:text-[#2196F3] text-[10px] text-center bottom-0 md:-bottom-12 right-5 left-5 absolute',
+    forgotText: 'text-[#2196F3] cursor-pointer hover:text-slate-100 sm:hover:text-slate-500',
+    signupLink: 'text-[#2196F3] underline cursor-pointer hover:text-slate-100 sm:hover:text-slate-500'
 }
 
 const Signin = () => {
