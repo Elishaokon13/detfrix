@@ -4,7 +4,7 @@ export default function Signin() {
     return (
         <div className="flex flex-col font-{grotesk} bg-blue-100 h-screen items-center justify-center">
             <div className="text-[40px] font-[grotesk] font-[700] mb-8">Signin</div>
-            <form class="space-y-4 md:space-y-6" action="#">
+            <form class="space-y-4 md:space-y-6" action="/dashboard">
               <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-white-900 ">Your email</label>
                 <input type="email" name="email" id="email" class="bg-white-50 border border-white-300 text-white-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " placeholder="name@company.com" required="" />
