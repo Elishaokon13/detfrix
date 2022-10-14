@@ -1,124 +1,33 @@
-import React from 'react'
-import logo from '../../assets/image/DETFRIX.png'
-import { MdAccountCircle } from 'react-icons/md'
-import { TextField } from '@mui/material'
-import { useState } from 'react'
-import { BiLogInCircle } from 'react-icons/bi'
-import Button from '../../components/Button'
-import { useEffect } from 'react'
+import React from "react";
 
-const styles = {
-    signinContainer: 'flex justify-center items-center sm:h-screen',
-    container: 'sm:flex sm:h-[550px] w-screen sm:w-[800px] shadow-2xl',
-    bgGradient: 'w-full px-10 h-full absolute opacity-[70%] top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-[#2196F3] via-[#EDEDED] to-[#fff] bg-opacity-8',
-    leftSection: 'hidden sm:block bg-signIn bg-cover h-auto sm:w-[50%] text-white bg-no-repeat relative',
-    rightSection: 'w-full sm:w-[50%] bg-signIn sm:bg-protection space-y-1 bg-cover sm:bg-contain h-[90vh] sm:h-[90%] bg-no-repeat sm:py-5 sm:px-10 text-[#2196F3] flex items-center justify-center relative',
-    imgContainer: 'flex flex-col items-center justify-center relative -space-y-5 h-[90%]',
-    slideContainer: 'px-2 text-sm uppercase absolute bottom-5 left-0 leading-7 font-semibold text-center',
-    footer: 'text-slate-50 md:text-[#2196F3] text-[10px] text-center bottom-0 md:-bottom-12 right-5 left-5 absolute',
-    forgotText: 'text-[#2196F3] cursor-pointer hover:text-slate-100 sm:hover:text-slate-500',
-    signupLink: 'text-[#2196F3] underline cursor-pointer hover:text-slate-100 sm:hover:text-slate-500'
-}
-
-const Signin = () => {
-    const [ email, setEmail ] = useState('')
-    const [ password, setPassword ] = useState('')
-    const [ invisible, setInvisible ] = useState(true)
-    const [slides] = useState([
-        'Instant result on inquiries made from millions of users all over the world',
-        'Validate interaction with a corporate business or body',
-        'Connect with accessible business-related request'
-    ])
-    const [currentSlide, setCurrentSlide] = useState(0)
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            let nextSlide = slides.length - 1 > currentSlide ? currentSlide + 1 : 0
-            setInvisible(false)
-            setCurrentSlide(nextSlide)
-            setTimeout(() => {
-                setInvisible(true)
-            }, 500)
-        }, 5000)
-
-        return () => clearInterval(interval)
-    }, [currentSlide, slides])
-
+export default function Signin() {
     return (
-        <div className={styles.signinContainer}>
-            <div className={styles.container}>
-                <div className={styles.leftSection}>
-                    <div className={styles.bgGradient}></div>
-                    <div className={styles.imgContainer}>
-                        <img alt='' src={logo} className='w-[250px]' />
-                    </div>
-                    {invisible && (
-                        <div className={styles.slideContainer}>
-                            <p className='animate-in zoom-in duration-1000'>{slides[currentSlide]}</p>
-                        </div>
-                    )}
+        <div className="flex flex-col bg-blue-100 h-screen items-center justify-center">
+            <div className="text-[20px] font-[grotesk] font-[700]">Signin</div>
+            <form class="space-y-4 md:space-y-6" action="#">
+              <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="" />
+              </div>
+              <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" />
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="" />
                 </div>
-                <div className={styles.rightSection}>
-                    <div className='py-10 md:py-0 space-y-5'>
-                        <div className={`sm:hidden ${styles.bgGradient}`}></div>
-                        <div className='relative'>
-                            <div className='flex justify-center'>
-                                <MdAccountCircle size='100px' />
-                            </div>
-                            <div className='w-full capitalize text-[25px] text-center font-extrabold'>
-                                <p>Login to access your account</p>
-                            </div>
-                        </div>
-                        <div className='flex justify-center items-center h-full relative'>
-                            <form className='space-y-8'>
-                                <div className='space-y-4 text-center'>
-                                    <TextField 
-                                        type='email'
-                                        name='email'
-                                        label='Email ID'
-                                        color="secondary"
-                                        size="small"
-                                        sx={{ boxShadow: 5 }}
-                                        required
-                                        onChange={e => setEmail(e.target.value)}
-                                        inputMode='email'
-                                        value={email}
-                                    />
-
-                                    <TextField 
-                                        type='password'
-                                        label='Password'
-                                        color="secondary"
-                                        size="small"
-                                        sx={{ boxShadow: 5 }}
-                                        required
-                                        inputMode='text'
-                                        onChange={e => setPassword(e.target.value)}
-                                        value={password}
-                                    />
-                                </div>
-
-                                <div>
-                                    <Button 
-                                        name='Login'
-                                        Icon={<BiLogInCircle />}
-                                        type='submit'
-                                    />
-                                </div>
-                            </form>
-                        </div>
-                        <div className='space-y-1 text-xs text-center relative'>
-                            <p className={styles.forgotText}>Forgot Password?</p>
-                            <p className='text-[#000] md:text-slate-500'>Don't have an account yet? <span className={styles.signupLink}>Sign Up</span></p>
-                        </div>
-                        <div className={styles.footer}>
-                            <p>&copy; 2022. The Enquirer Software</p>
-                        </div>
-                    </div>
+                <div class="ml-3 text-sm">
+                  <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="#">Terms and Conditions</a></label>
                 </div>
-            </div>
+              </div>
+              <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create an account</button>
+              <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                Don't have an account? <a href="/signup" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Signup here</a>
+              </p>
+            </form>
         </div>
-    )
-}
 
-export default Signin
+    );
+    }
