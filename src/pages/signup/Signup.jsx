@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../assets/image/DETFRIX2.png'
+import logo from '../../assets/image/DETFRIX.png'
 import Four from './steps/Four'
 import Three from './steps/Three'
 import Two from './steps/Two'
