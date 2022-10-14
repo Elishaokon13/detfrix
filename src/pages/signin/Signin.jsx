@@ -10,7 +10,7 @@ export default function Signin() {
                 <input type="email" name="email" id="email" class="bg-white-50 border border-white-300 text-white-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " placeholder="name@company.com" required="" />
               </div>
               <div>
-                <label for="password" class="block mb-2 text-sm font-medium text-white-900 dark:text-white">Password</label>
+                <label for="password" class="block mb-2 text-sm font-medium text-white-900 ">Password</label>
                 <input type="password" name="password" id="password" placeholder="••••••••" class="bg-white-50 border border-white-300 text-white-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " required="" />
               </div>
               
