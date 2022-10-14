@@ -1,13 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
-
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-const navigation = [
-  { name: 'Product', to: '#' },
-  { name: 'Features', to: '#' },
-  { name: 'Marketplace', to: '#' },
-  { name: 'Company', to: '#' },
-]
 
 function HomeHero() {
   return (

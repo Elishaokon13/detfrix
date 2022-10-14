@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useRef } from "react";
 //icons
 import { FaCopy } from "react-icons/fa";

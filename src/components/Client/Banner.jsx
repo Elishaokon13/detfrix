@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import React from 'react'
 import { MegaphoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function Banner() {

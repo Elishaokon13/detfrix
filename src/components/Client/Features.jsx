@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import React from 'react'
 import { BoltIcon, ChatBubbleBottomCenterTextIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 
 const features = [
