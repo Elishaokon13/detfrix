@@ -4,9 +4,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    @font-face {
-        font-family: 'roboto';
-        src: url('/public/Spaceroboto.ttf');
-    }
-}
