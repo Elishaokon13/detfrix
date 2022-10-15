@@ -4,32 +4,32 @@ import React from 'react'
 function Deposit() {
   return (
     <div className='flex flex-col bg-blue-100 h-screen items-center justify-center'>
-      <div className='text-[45px] md:text-[60px] font-[grotesk] font-[700]'>Deposit</div>
+      <div className='text-[45px] md:text-[60px] font-[roboto] font-[700]'>Deposit</div>
       <div className='mt-[20px] flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center'>
-          <div className='text-[15px] font-[grotesk] font-[700]'>Deposit Amount</div>
+          <div className='text-[15px] font-[roboto] font-[700]'>Deposit Amount</div>
           <div className='mt-[10px] flex items-center justify-center'>
             <div className='bg-[#F5F5F5] h-[40px] w-[40px] flex items-center justify-center'>
-              <div className='text-[20px] font-[grotesk] font-[700]'>-</div>
+              <div className='text-[20px] font-[roboto] font-[700]'>-</div>
             </div>
             <div className='bg-[#F5F5F5] h-[40px] w-[40px] flex items-center justify-center'>
-              <div className='text-[20px] font-[grotesk] font-[700]'>+</div>
+              <div className='text-[20px] font-[roboto] font-[700]'>+</div>
             </div>
           </div>
         </div>
         <div className='mt-[20px] flex flex-col items-center justify-center'>
-          <div className='text-[15px] font-[grotesk] font-[700]'>Payment Method</div>
+          <div className='text-[15px] font-[roboto] font-[700]'>Payment Method</div>
           <div className='mt-[10px] flex items-center justify-center'>
             <div className='bg-[#F5F5F5] h-[40px] w-[130px] flex items-center justify-center'>
-              <div className='text-[20px] font-[grotesk] font-[700]'>2361074768</div>
+              <div className='text-[20px] font-[roboto] font-[700]'>2361074768</div>
             </div>
             <div className='bg-[#F5F5F5] h-[40px] w-[100px] flex items-center  justify-center ml-8'>
-              <div className='text-[20px] font-[grotesk] font-[700] '>PAGA MFB</div>
+              <div className='text-[20px] font-[roboto] font-[700] '>PAGA MFB</div>
             </div>
           </div>
         </div>
         <div className='mt-[20px] flex flex-col items-center mt-12 justify-center'>
-          <div className='text-[15px] font-[grotesk] font-[700]'>Upload Your Proof Of Payment</div>
+          <div className='text-[15px] font-[roboto] font-[700]'>Upload Your Proof Of Payment</div>
           
         </div>
       </div>

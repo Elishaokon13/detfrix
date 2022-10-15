@@ -2,7 +2,8 @@ import React from 'react'
 
 function TopNav({ toggle, isToggled }) {
   return (
-    <div className='shadow h-[60px] bg-blue-300 text-white flex items-center justify-between px-[20px] font-[grotesk]'>
+    <div className='shadow h-[60px] bg-blue-300 text-white flex items-center justify-between px-[20px] font-[roboto]'>
+
       <div>TopBar</div>
       
       <div className=' md:hidden cursor-pointer h-[30px] w-[30px] bg-blue-500' onClick={() => isToggled(!toggle)}></div>
