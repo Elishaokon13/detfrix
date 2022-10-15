@@ -6,7 +6,7 @@
 
 @layer utilities{
     @font-face {
-        font-family: 'grotesk';
-        src: url('/public/SpaceGrotesk.ttf');
+        font-family: 'roboto';
+        src: url('/public/Spaceroboto.ttf');
     }
 }

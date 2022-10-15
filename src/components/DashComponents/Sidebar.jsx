@@ -52,13 +52,13 @@ const Sidebar = ({ toggle, isToggled }) => {
       }  absolute lg:relative min-w-[120px] max-w-[240px] max-h-screen min-h-screen transition-left  flex flex-col   bg-blue-500 pt-[10px]
    `}
     >
-      <div className="pl-[20px] font-[grotesk] font-[800] text-[25px] text-white">
+      <div className="pl-[20px] font-[roboto] font-[800] text-[25px] text-white">
       <Link to='/dashboard/'>Detfrix</Link>
       </div>
       <div className="mt-[10px] md:mt-[20px] flex flex-col w-full">
         {navArr.map(({ icon, name, to }) => (
           <CustomLink to={to} key={to}>
-            <div className="flex text-[15px] items-center font-[grotesk]">
+            <div className="flex text-[15px] items-center font-[roboto]">
               <div>
                 {icon}
                 {name}</div>

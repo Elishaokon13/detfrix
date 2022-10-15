@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Signin() {
     return (
-        <div className="flex flex-col font-{grotesk} bg-blue-100 h-screen items-center justify-center">
-            <div className="text-[40px] font-[grotesk] font-[700] mb-8">Signin</div>
+        <div className="flex flex-col font-[roboto] bg-blue-100 h-screen items-center justify-center">
+            <div className="text-[40px] font-[roboto] font-[700] mb-8">Signin</div>
             <form class="space-y-4 md:space-y-6" action="/dashboard">
               <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-white-900 ">Your email</label>

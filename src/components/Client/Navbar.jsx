@@ -61,7 +61,7 @@ export default function Navbar() {
                                         ))}
 
 
-                                        <Link to="/" className="w-full px-6 py-2 mt-3 font-[grotesk] text-center text-white bg-[#4176FF] rounded-md lg:ml-5">
+                                        <Link to="/" className="w-full px-6 py-2 mt-3 font-[roboto] text-center text-white bg-[#4176FF] rounded-md lg:ml-5">
 
                                             Signin
 
