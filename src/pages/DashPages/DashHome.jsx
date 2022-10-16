@@ -1,5 +1,6 @@
 import React from "react";
 import ReferralBox from "../../components/DashComponents/ReferralBox";
+//import ActivityBox from "../../components/DashComponents/ActivityBox";
 
 
 function DashHome() {
@@ -8,7 +9,7 @@ function DashHome() {
          DashHome
 
          {/* for testing purposes */}
-         {/* <ActivityBox /> */}
+         {/* <ActivityBox /> */}   
 
          <ReferralBox />
 
