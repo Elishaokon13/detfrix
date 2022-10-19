@@ -5,6 +5,7 @@ import ReferralBox from "../../components/DashComponents/ReferralBox";
 
 
 function DashHome() {
+
    return (
       <div>
          DashHome
@@ -13,7 +14,8 @@ function DashHome() {
          {/* <ActivityBox /> */}   
 
          {/* <ReferralBox /> */}
-         <Dashboard/>
+
+            <Dashboard/>
 
       </div>
    );

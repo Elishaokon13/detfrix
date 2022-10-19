@@ -21,22 +21,22 @@ const ReferralBox = () => {
    }
 
    return (
-      <div className="p-3 w-50 font-[roboto] rounded bg-white border border-black">
+      <div className="lg:border lg:border-black p-3 w-50 font-[roboto] rounded bg-white border-[0.1px] border-gray-200">
          <h3 className="text-lg text-start font-semibold">Referral Link</h3>
          <p className="py-2 text-sm">
             Automatically top up your <br/> account balance by sharing your Referral
             link. earn a percentage for whatever plan your Referred user buy.
          </p>
 
-         <div className="flex items-center border-b-2 border-gray-700 pb-1.5 cursor-pointer">
+         <div className="flex items-center pb-1.5 cursor-pointer">
             <input
                ref={textAreaRef}
-               className="mr-3 font-semibold text-sm border-none focus:outline-none selection:bg-transparent w-80"
+               className="mr-3 font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full"
                contentEditable={false}
                defaultValue="https://detfrix.com/referral/user"
             />
             <button className="flex items-center" onClick={(e) => onCopy(e)}>
-               <FaCopy className="h-4 w-5" />
+               <FaCopy className="h-4 w-5 text-gray-700" />
                <p className="ml-2 text-blue-400 uppercase rounded-md border border-transparent text-sm">copy</p>
             </button>
          </div>
