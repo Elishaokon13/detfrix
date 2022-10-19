@@ -3,7 +3,7 @@ import React from "react";
 import { FaWallet } from "react-icons/fa";
 import { RiLuggageDepositFill, RiExchangeDollarFill } from "react-icons/ri";
 
-const Sidebar = ({ toggle, isToggled }) => {
+const Bottomnav = ({ toggle, isToggled }) => {
   const handleToggle = () => {
     isToggled(!toggle);
   };
@@ -13,7 +13,7 @@ const Sidebar = ({ toggle, isToggled }) => {
       <Link
         className={`item ${
           match ? "border-l-[5px] border-[#FAFAFA] text-white" : ""
-        } text-[20px] font-[700]   w-full my-[20px] pl-[10px] md:pl-[20px] `}
+        } text-[20px] font-[700]   w-full my-[20px] flex justify-center`}
         to={to}
         {...props}
         onClick={handleToggle}
@@ -26,40 +26,33 @@ const Sidebar = ({ toggle, isToggled }) => {
   const navArr = [
     {
       name: "Portfolio",
-      icon: <FaWallet />,
+      icon: <FaWallet className=" w-12 h-9" />,
       to: "",
     },
     {
       name: "Deposit",
-      icon: <RiLuggageDepositFill />,
+      icon: <RiLuggageDepositFill className=" w-12 h-9" />,
       to: "deposit",
     },
     {
       name: "Invest",
-      icon: <RiExchangeDollarFill />,
+      icon: <RiExchangeDollarFill className=" w-12 h-9" />,
       to: "invest",
     },
     {
       name: "Withdraw",
-      icon: <RiExchangeDollarFill />,
+      icon: <RiExchangeDollarFill className=" w-12 h-9 m-[0px] text-center" />,
       to: "withdraw",
     }
   ];
   return (
-    <div
-      className={`${
-        toggle ? "left-0 z-30 lg:left-0" : "left-[-100%] lg:left-0"
-      }  absolute lg:relative min-w-[120px] max-w-[240px] max-h-screen min-h-screen lg:h-4 transition-left  flex flex-col   bg-blue-500 pt-[10px]
-   `}
-    >
-      <div className="pl-[20px] font-[roboto] font-[800] text-[25px] text-white">
-      <Link to='/dashboard/'>Detfrix</Link>
-      </div>
-      <div className="mt-[10px] md:mt-[20px] flex flex-col w-full">
+    <div className="lg:hidden visible fixed bottom-0 w-full bg-blue-400 rounded-t-2xl">
+
+      <div className="flex w-full text-center justify-center">
         {navArr.map(({ icon, name, to }) => (
           <CustomLink to={to} key={to}>
             <div className="flex text-[15px] items-center font-[roboto]">
-              <div>
+              <div className="text-sm">
                 {icon}
                 {name}</div>
             </div>
@@ -70,4 +63,4 @@ const Sidebar = ({ toggle, isToggled }) => {
   );
 };
 
-export default Sidebar;
+export default Bottomnav;
