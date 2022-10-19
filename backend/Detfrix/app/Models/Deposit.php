@@ -10,7 +10,7 @@ class Deposit extends Model
     use HasFactory;
     protected $table = 'deposit';
     protected $fillable = [
-        'userid','amount'
+        'userid','amount','paymentMethod','upload'
     ];
 
     public function user(){

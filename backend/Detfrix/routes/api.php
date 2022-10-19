@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::group(['middleware' => ['cors', 'json.response']], function () {
     Route::post('/login', [AuthenciationController::class,'login'])->name('login');
     Route::post('/register',[AuthenciationController::class,'register'])->name('register');
@@ -28,7 +29,7 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
 
 }); 
 
-Route::middleware('auth:api')->group(function () {
+Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthenciationController::class,'logout'])->name('logout');
     Route::post('/packageCreate',[PackageController::class,'packageCreate'])->middleware('api.admin');
     Route::put('/packageUpdate',[PackageController::class,'packageUpdate'])->middleware('api.admin');
@@ -37,13 +38,12 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/packageAll',[PackageController::class,'packageAll'])->middleware('api.admin');
 
 
-    Route::post('/pay',[PaymentController::class,'redirectToGateway'])->name('pay');
-    Route::get('/payment/callback', [PaymentController::class, 'handleGatewayCallback'])->name('payment');
-
 
     Route::post('/BankCreate',[BankController::class,'BankCreate']);
     Route::post('/BankUpdate',[BankController::class,'BankUpdate']);
     Route::get('/BankDetailsId/{id}',[BankController::class,'BankDetailsId']);
     Route::get('/BankDetailsAll',[BankController::class,'BankDetailsAll']);
     Route::post('/withdrawal',[WithdrawalController::class,'Withdrawal'])->name('Withdrawal');
+    Route::post('/depositCreate',[DepositController::class,'depositCreate'])->name('depositCreate');
+
 });

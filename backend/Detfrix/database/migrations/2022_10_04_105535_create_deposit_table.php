@@ -18,6 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('userid');
             $table->foreign('userid')->references('id')->on('users')->onDelete('cascade');
             $table->double('amount');
+            $table->string('paymentMethod');
+            $table->string('upload');
             $table->timestamp('datecreated')->useCurrent();  
             $table->timestamps();
         });

@@ -18,18 +18,19 @@ class AuthenciationController extends Controller
             'dob'=>'required',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6',
-
+            'type' => 'integer'
         ]);
         if ($validate->fails())
         {
             return response(['errors'=>$validate->errors()->all()], 422);
         }
-
+        $request['type'] = $request['type'] ? $request['type']  : 0;
         $request['password'] = Hash::make($request['password']);
         $request['remember_token'] = Str::random(10);
         $user = User::create($request->toArray());
-        $token = $user->createToken('Laravel Password Grant Client')->accessToken;
+        $token = $user->createToken('Laravel Password Grant Client')->plainTextToken;
         $response = ['token' => $token];
+        
         return response($response, 200);
 
     }
@@ -49,17 +50,14 @@ class AuthenciationController extends Controller
         $user = User::where('email',$request->email)->first();
         if($user){
             if(Hash::check($request->password,$user->password)){
-                $token = $user->createToken('Laravel Password Grant Client')->accessToken;
+                $token = $user->createToken('Laravel Password Grant Client')->plainTextToken;
                 $response = ['token' => $token];
                 return response($response, 200);
             } else {
                 $response = ["message" => "Password mismatch"];
                 return response($response, 422);
             }
-        if($user->isadmin == true){
-            $response = ["message" => "Admin Login"];
-            return response($response, 200);
-        }
+      
             
         } else {
             $response = ["message" =>'User does not exist'];
