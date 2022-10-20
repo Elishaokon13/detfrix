@@ -27,7 +27,7 @@ function Deposit (deposits = initialDeposit, action){
             })
     
         default:
-            break;
+            return deposits;
     }
 }
 

@@ -4,6 +4,7 @@ import { baseURL } from "../config";
 
 const register = async ( firstname, lastname, phone, dob, email, password) => {
     const result = await axios.post(baseURL + "/register", {
+      
       firstname, lastname, phone, dob, email, password
     });
     return result;

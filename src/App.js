@@ -25,13 +25,13 @@ function App() {
           <Route path='/dashboard' element={<DashBoardLayout/>} >
             
             <Route path='' element={<DashHome/>} />
-            <Route path='/deposit' element={<Deposit/>} />
-            <Route path='/add-deposit' element={<AddDeposit/>} />
-            <Route path='/deposit/:id' element={<Deposit/>} />
-            <Route path='/invest' element={<Invest/>} />
-            <Route path='/withdraw' element={<Withdraw/>} />
-            <Route path='/add-withdraw' element={<AddWithdrawal/>} />
-            <Route path='/withdraw/:id' element={<Withdraw/>} />
+            <Route path='deposit' element={<Deposit/>} />
+            <Route path='add-deposit' element={<AddDeposit/>} />
+            <Route path='deposit/:id' element={<Deposit/>} />
+            <Route path='invest' element={<Invest/>} />
+            <Route path='withdraw' element={<Withdraw/>} />
+            <Route path='add-withdraw' element={<AddWithdrawal/>} />
+            <Route path='withdraw/:id' element={<Withdraw/>} />
           </Route>
         </Routes>
     </Router>
