@@ -13,15 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('deposit', function (Blueprint $table) {
+        Schema::create('investment', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('userid');
             $table->foreign('userid')->references('id')->on('users')->onDelete('cascade');
-            $table->double('amount');
-            $table->string('paymentMethod');
-            $table->string('upload');
-            $table->boolean('isPending');
-            $table->timestamp('datecreated')->useCurrent();  
+            $table->unsignedBigInteger('depositid');
+            $table->foreign('depositid')->references('id')->on('deposit')->onDelete('cascade');
+            $table->unsignedBigInteger('packageid');
+            $table->foreign('packageid')->references('id')->on('package')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -33,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deposit');
+        Schema::dropIfExists('investment');
     }
 };

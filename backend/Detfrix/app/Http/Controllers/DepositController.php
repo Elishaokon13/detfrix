@@ -41,4 +41,26 @@ class DepositController extends Controller
         $response = ["message" => "Deposit Saved"];
         return response($response, 200);
     }
+
+    public function DepositgetAll()
+    {
+        $deposit = Deposit::all();
+        if(is_null($deposit))
+        {
+            return response('package id does not exist');
+        }
+        $response = ["message" => "Package retrieved successfully."];
+        return response($response, 200);
+    }
+
+    public function DepositById($id)
+    {
+        $deposit = Deposit::find($id);
+        if(is_null($deposit))
+        {
+            return response('package id does not exist');
+        }
+        $response = ["message" => "Package retrieved successfully."];
+        return response($response, 200);
+    }
 }
