@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { createDeposit } from '../../action/deposit';
 import DepositService from '../../services/deposit.service';
 const AddDeposit = () => {
     const intialDepositState = {
@@ -7,7 +8,6 @@ const AddDeposit = () => {
         upload:""
     };
     const [deposit, setDeposit] = useState(intialDepositState)
-    const [submitted, setSubmitted] = useState(false);
     const handleInputChange = event => {
         const { name, value } = event.target;
         setDeposit({ ...deposit, [name]: value });
@@ -20,7 +20,7 @@ const AddDeposit = () => {
             upload: deposit.upload
         };
     
-        DepositService.create(data)
+        createDeposit(data)
           .then(response => {
             setDeposit({
              
