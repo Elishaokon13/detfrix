@@ -11,17 +11,17 @@ function Dashmobile() {
         <div>
             <section className='w-full h-full  px-8 pb-20 py-6'>
                 <div className="flex gap-3 pb-7">
-                    <div onClick={() => [setbalance(!balance), setprofit(false), setreferral(false)]}  className={`${balance ? 'bg-blue-500 text-white' : 'bg-blue-100 text-black'} w-1/3 border-2 rounded-lg`}>
+                    <div onClick={() => [setbalance(!balance), setprofit(false), setreferral(false)]}  className={`${balance ? 'bg-blue-800 text-white' : 'bg-blue-100 text-black'} w-1/3 border-2 rounded-lg`}>
                         <div className='w-full  text-center  rounded-t-md'>
                             <p className='text-md font-semibold'>Balance</p>
                         </div>
                     </div>
-                    <div onClick={() => [setprofit(!profit), setbalance(false), setreferral(false)]}  className={`${profit ? 'bg-blue-500 text-white' : 'bg-blue-100 text-black'} w-1/3 border-2 rounded-lg`}>
+                    <div onClick={() => [setprofit(!profit), setbalance(false), setreferral(false)]}  className={`${profit ? 'bg-blue-800 text-white' : 'bg-blue-100 text-black'} w-1/3 border-2 rounded-lg`}>
                         <div className='w-full  text-center  rounded-t-md'>
                             <p className='text-md font-semibold'>Profit</p>
                         </div>
                     </div>
-                    <div onClick={() => [setreferral(!referral), setbalance(false), setprofit(false)]} className={`${referral ? 'bg-blue-500 text-white' : 'bg-blue-100 text-black'} w-1/3 border-2 rounded-lg`}>
+                    <div onClick={() => [setreferral(!referral), setbalance(false), setprofit(false)]} className={`${referral ? 'bg-blue-800 text-white' : 'bg-blue-100 text-black'} w-1/3 border-2 rounded-lg`}>
                         <div className='w-full text-center  rounded-t-md'>
                             <p className='text-md font-semibold'>Referral</p>
                         </div>

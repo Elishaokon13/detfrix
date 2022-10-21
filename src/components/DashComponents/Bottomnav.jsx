@@ -12,7 +12,7 @@ const Bottomnav = ({ toggle, isToggled }) => {
     return (
       <Link
         className={`item ${
-          match ? "border-l-[5px] border-[#FAFAFA] text-white" : ""
+          match ? "text-blue-800" : ""
         } text-[20px] font-[700]   w-full my-[20px] flex justify-center`}
         to={to}
         {...props}
@@ -27,7 +27,7 @@ const Bottomnav = ({ toggle, isToggled }) => {
     {
       name: "Portfolio",
       icon: <FaWallet className=" w-12 h-9" />,
-      to: "",
+      to: " ",
     },
     {
       name: "Deposit",
@@ -41,12 +41,12 @@ const Bottomnav = ({ toggle, isToggled }) => {
     },
     {
       name: "Withdraw",
-      icon: <RiExchangeDollarFill className=" w-12 h-9 m-[0px] text-center" />,
+      icon: <RiExchangeDollarFill className=" w-12 h-9 ml-2 text-center" />,
       to: "withdraw",
     }
   ];
   return (
-    <div className="lg:hidden visible fixed bottom-0 w-full bg-blue-400 rounded-t-2xl">
+    <div className="lg:hidden visible fixed bottom-0 w-full shadow bg-white border-t-2 border-solid border-gray-200 rounded-t-2xl">
 
       <div className="flex w-full text-center justify-center">
         {navArr.map(({ icon, name, to }) => (
