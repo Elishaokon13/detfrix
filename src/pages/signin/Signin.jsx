@@ -18,7 +18,7 @@ export default function Signin() {
     
     dispatch(login(email, password))
     .then(() => {
-      navigate("dashboard");
+      navigate("/dashboard");
       window.location.reload();
     });
 

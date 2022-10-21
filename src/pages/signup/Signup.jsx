@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Logo from "../../assets/image/DETFRIX.svg";
 import { register } from "../../action/auth";
+import { useNavigate,Navigate } from 'react-router-dom';
 
 function Signup() {
   const [firstname, setFirstName] = useState("");
@@ -15,11 +16,23 @@ function Signup() {
 
   const { message } = useSelector(state => state.message);
   const dispatch = useDispatch();
+  let navigate = useNavigate();
 
+  const intialUser = {
+    firstname:"",
+    lastname:"",
+    phone:"",
+    dob:"",
+    email:"",
+    password:""
+};
+const [user, setUser] = useState(intialUser)
   const handleRegister = () =>{
     dispatch(register(firstname,lastname,phone,dob,email, password))
         .then(() => {
           setSuccessful(true);
+          setUser(intialUser);
+          navigate("/signin");
         })
         .catch(() => {
           setSuccessful(false);

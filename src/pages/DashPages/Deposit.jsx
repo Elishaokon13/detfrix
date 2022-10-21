@@ -44,7 +44,7 @@ function Deposit() {
         </div>
         <input id="dropzone-file" type="file" class="hidden"/>
     </label>
-</div>
+   </div>
 </>
 
     </div>
