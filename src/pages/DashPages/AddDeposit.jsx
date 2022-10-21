@@ -7,7 +7,7 @@ const AddDeposit = () => {
         paymentMethod:"",
         upload:""
     };
-    const [deposit, setDeposit] = useState(intialDepositState)
+   
     const handleInputChange = event => {
         const { name, value } = event.target;
         setDeposit({ ...deposit, [name]: value });
