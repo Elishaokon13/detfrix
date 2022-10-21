@@ -25,6 +25,7 @@ function App() {
           <Route path='/dashboard' element={<DashBoardLayout/>} >
             
             <Route path='' element={<DashHome/>} />
+            {/* <Route path='portfolio' element={<DashHome/>} /> */}
             <Route path='deposit' element={<Deposit/>} />
             <Route path='add-deposit' element={<AddDeposit/>} />
             <Route path='deposit/:id' element={<Deposit/>} />
