@@ -13,7 +13,7 @@ const Bottomnav = ({ toggle, isToggled }) => {
       <Link
         className={`item ${
           match ? "text-blue-800" : ""
-        } text-[20px] font-[700]   w-full my-[20px] flex justify-center`}
+        } text-[20px] font-[700]   w-full my-[10px] flex justify-center`}
         to={to}
         {...props}
         onClick={handleToggle}
@@ -26,22 +26,22 @@ const Bottomnav = ({ toggle, isToggled }) => {
   const navArr = [
     {
       name: "Portfolio",
-      icon: <FaWallet className=" w-12 h-9" />,
+      icon: <FaWallet className=" w-9 h-6 m-auto" />,
       to: " ",
     },
     {
       name: "Deposit",
-      icon: <RiLuggageDepositFill className=" w-12 h-9" />,
+      icon: <RiLuggageDepositFill className=" w-9 h-6 m-auto" />,
       to: "deposit",
     },
     {
       name: "Invest",
-      icon: <RiExchangeDollarFill className=" w-12 h-9" />,
+      icon: <RiExchangeDollarFill className=" w-9 h-6 m-auto" />,
       to: "invest",
     },
     {
       name: "Withdraw",
-      icon: <RiExchangeDollarFill className=" w-12 h-9 ml-2 text-center" />,
+      icon: <RiExchangeDollarFill className=" w-9 h-6 m-auto" />,
       to: "withdraw",
     }
   ];

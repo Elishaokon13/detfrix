@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import ReferralBox from "./ReferralBox";
-import { FaArrowCircleUp } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import Bottomnav from "./Bottomnav";
-import Dashmobile from "./Dashmobile";
 import Usdt from "./Usdt";
 
 function Withdrawal() {
