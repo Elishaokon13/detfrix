@@ -60,8 +60,6 @@ const Usdt = () => {
               </div>
           }
 
-
-
         </div>
       }
     </div>

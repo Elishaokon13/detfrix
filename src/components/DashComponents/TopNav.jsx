@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FaRegUserCircle } from "react-icons/fa";
-import { BiMenu } from "react-icons/bi";
 
 
 function TopNav({ toggle, isToggled }) {
@@ -10,8 +10,9 @@ function TopNav({ toggle, isToggled }) {
       <div className='py-5 w-full'>
         <ul className='flex justify-between'>
           <li>Dashboard</li>
-          <li className='lg:block hidden'><FaRegUserCircle/></li>
-          <li className='lg:hidden block'><BiMenu onClick={() => isToggled(!toggle)}/></li>
+          <Link to="profile">
+            <li className='lg:block hidden'><FaRegUserCircle/></li>
+          </Link>
         </ul>
       </div>
       

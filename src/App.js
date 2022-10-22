@@ -12,6 +12,7 @@ import Signin from './pages/signin/Signin';
 import Signup from './pages/signup/Signup';
 import AddDeposit from './pages/DashPages/AddDeposit';
 import AddWithdrawal from './pages/DashPages/AddWithdrawal';
+import Profile from './pages/DashPages/Profile';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
           <Route path='/signin' element={<Signin/>} />
-          <Route path='/dashboard' element={<DashBoardLayout/>} >
+          <Route path='/dashboard' element={<DashBoardLayout/>}>
             
             <Route path='' element={<DashHome/>} />
             {/* <Route path='portfolio' element={<DashHome/>} /> */}
@@ -33,6 +34,8 @@ function App() {
             <Route path='withdraw' element={<Withdraw/>} />
             <Route path='add-withdraw' element={<AddWithdrawal/>} />
             <Route path='withdraw/:id' element={<Withdraw/>} />
+            <Route path='profile' element={<Profile/>}/>
+
           </Route>
         </Routes>
     </Router>
