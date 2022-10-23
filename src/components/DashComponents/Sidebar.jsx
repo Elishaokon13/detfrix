@@ -28,7 +28,7 @@ const Sidebar = ({ toggle, isToggled }) => {
     {
       name: "Portfolio",
       icon: <FaWallet className="w-12 h-6" />,
-      to: " ",
+      to: "",
     },
     {
       name: "Deposit",

@@ -23,7 +23,7 @@ export default function Signin() {
     });
 
   if (isLoggedIn) {
-    return <Navigate to="dashboard" />;
+    return <Navigate to="/dashboard" />;
   }
   }
 

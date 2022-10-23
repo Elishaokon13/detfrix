@@ -1,48 +1,48 @@
-import React, { useState } from 'react'
-import { createDeposit } from '../../action/deposit';
-import DepositService from '../../services/deposit.service';
-const AddDeposit = () => {
-    const intialDepositState = {
-        amount:"",
-        paymentMethod:"",
-        upload:""
-    };
+// import React, { useState } from 'react'
+// import { createDeposit } from '../../action/deposit';
+// import DepositService from '../../services/deposit.service';
+// const AddDeposit = () => {
+//     const intialDepositState = {
+//         amount:"",
+//         paymentMethod:"",
+//         upload:""
+//     };
    
-    const handleInputChange = event => {
-        const { name, value } = event.target;
-        setDeposit({ ...deposit, [name]: value });
-      };
+//     const handleInputChange = event => {
+//         const { name, value } = event.target;
+//         setDeposit({ ...deposit, [name]: value });
+//       };
 
-      const saveDeposit = () => {
-        var data = {
-            amount: deposit.amount,
-            paymentMethod: deposit.paymentMethod,
-            upload: deposit.upload
-        };
+//       const saveDeposit = () => {
+//         var data = {
+//             amount: deposit.amount,
+//             paymentMethod: deposit.paymentMethod,
+//             upload: deposit.upload
+//         };
     
-        createDeposit(data)
-          .then(response => {
-            setDeposit({
+//         createDeposit(data)
+//           .then(response => {
+//             setDeposit({
              
-                amount: response.data.title,
-                paymentMethod: response.data.description,
-                upload: response.data.published
-            });
-           console.log(response.data);
-          })
-          .catch(e => {
-            console.log(e);
-          });
+//                 amount: response.data.title,
+//                 paymentMethod: response.data.description,
+//                 upload: response.data.published
+//             });
+//            console.log(response.data);
+//           })
+//           .catch(e => {
+//             console.log(e);
+//           });
 
-         const newDeposit = () =>{
-            setDeposit(intialDepositState);
-          }
-      };
-    return (
-    <div>
+//          const newDeposit = () =>{
+//             setDeposit(intialDepositState);
+//           }
+//       };
+//     return (
+//     <div>
 
-    </div>
-    )
-}
+//     </div>
+//     )
+// }
 
-export default AddDeposit
+// export default AddDeposit
