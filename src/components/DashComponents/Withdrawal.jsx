@@ -7,6 +7,7 @@ import Usdt from "./Usdt";
 
 function Withdrawal() {
     const [modal1, setModal1] = useState(false);
+    const [modal2, setModal2] = useState(false);
     return (
         <div>
 
@@ -36,26 +37,26 @@ function Withdrawal() {
                                             <FaArrowRight className="h-5 w-5" />
                                         </div>
                                     </div>
-                                    
-                                    <div className="flex items-center gap-4 px-5 py-2 rounded-sm bg-white w-full mb-2 hover:bg-gray-50 lg:border-0 border-[0.1px] border-gray-200" >
+
+                                </div>
+
+                                <div className="w-full" onClick={() => setModal2(!modal2)}>
+                                    <div className="flex items-center gap-4 px-5 py-2 mt-8 rounded-sm bg-white w-full mb-2 hover:bg-gray-50 lg:border-0 border-[0.1px] border-gray-200" >
                                         <FaDollarSign className="w-6 h-8 text-green-500" />
                                         <div className="w-1/2">
                                             <p className="text-lg font-bold">BANK WITHDRAWAL</p>
-                                            
+
                                         </div>
                                         <div className="w-1/2 flex justify-end">
                                             <FaArrowRight className="h-5 w-5" />
                                         </div>
                                     </div>
-
-
                                 </div>
-
+                                </div>
                             </div>
+
+
                         </div>
-
-
-                    </div>
                 </section>
                 <section>
                     <Bottomnav />
@@ -66,7 +67,7 @@ function Withdrawal() {
                         :
                         <p></p>
                     }
-                    {modal1 ?
+                    {modal2 ?
                         <Bank />
                         :
                         <p></p>
