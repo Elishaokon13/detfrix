@@ -49,7 +49,7 @@ const DepositUsdt = () => {
                   <input className="font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full" />
                   <p className="text-start pt-5">Wallet address for withdrawal</p>
                   <input className="font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full" />
-                  <p className="bg-blue-800 p-2 mt-4 cursor-pointer text-white" onClick={() => [setModal2(true), setModal1(false)]}>Okay</p>
+                  <p className="bg-blue-800 p-2 mt-4 cursor-pointer text-white" onClick={() => [setModal2(true), setModal1(false)]}>Okay </p>
                 </div>
               </div>
             </div>

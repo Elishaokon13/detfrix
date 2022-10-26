@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound'
 import DashBoardLayout from './Template/DashBoardLayout';
 import Signin from './pages/signin/Signin';
 import Signup from './pages/signup/Signup';
-import AddDeposit from './pages/DashPages/AddDeposit';
+//import AddDeposit from './pages/DashPages/AddDeposit';
 import AddWithdrawal from './pages/DashPages/AddWithdrawal';
 import Profile from './pages/DashPages/Profile';
 
@@ -22,13 +22,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
-          <Route path='/signin' element={<Signin/>} />
+          <Route path='/login' element={<Signin/>} />
           <Route path='/dashboard' element={<DashBoardLayout/>}>
             
             <Route path='' element={<DashHome/>} />
             {/* <Route path='portfolio' element={<DashHome/>} /> */}
             <Route path='deposit' element={<Deposit/>} />
-            <Route path='add-deposit' element={<AddDeposit/>} />
+            {/*<Route path='add-deposit' element={<AddDeposit/>} /> */}
             <Route path='deposit/:id' element={<Deposit/>} />
             <Route path='invest' element={<Invest/>} />
             <Route path='withdraw' element={<Withdraw/>} />
