@@ -32,6 +32,7 @@ const ReferralBox = () => {
             <input
                ref={textAreaRef}
                className="mr-3 font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full"
+               readOnly
                contentEditable={false}
                defaultValue="https://detfrix.com/referral/user"
             />

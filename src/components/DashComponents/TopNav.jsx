@@ -11,7 +11,7 @@ function TopNav({ toggle, isToggled }) {
         <ul className='flex justify-between'>
           <li>Dashboard</li>
           <Link to="profile">
-            <li className='lg:block hidden'><FaRegUserCircle/></li>
+            <li><FaRegUserCircle/></li>
           </Link>
         </ul>
       </div>
