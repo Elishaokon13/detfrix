@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Logo from "../../assets/image/DETFRIX.svg";
 import { register } from "../../action/auth";
 import { useNavigate,Navigate } from 'react-router-dom';
+import Navbar from "../../components/Client/Navbar"
+import Footer from "../../components/Client/Footer"
 
 function Signup() {
   const [firstname, setFirstName] = useState("");

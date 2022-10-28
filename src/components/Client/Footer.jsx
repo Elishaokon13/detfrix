@@ -20,7 +20,7 @@ export default function Footer() {
                             <a href="https://flowbite.com" class="hover:underline">Detfrix</a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            <a href="/contact" class="hover:underline">Contact Us</a>
                         </li>
                     </ul>
                 </div>
