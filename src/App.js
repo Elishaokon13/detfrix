@@ -14,6 +14,7 @@ import Signup from './pages/signup/Signup';
 import AddWithdrawal from './pages/DashPages/AddWithdrawal';
 import Profile from './pages/DashPages/Profile';
 import Contact from './components/Client/Contact';
+import AboutUs from './components/Client/About';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
           <Route path='/login' element={<Signin/>} />

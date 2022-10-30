@@ -4,14 +4,14 @@ import Footer from "./Footer"
 export default function Contact() {
     return (
         <div>
-            <Navbar className="bg-blue-300" />
-            <div className="w-full font-[roboto]">
+            <Navbar />
+            <div className="w-full  font-[roboto]">
                 <div className="container flex flex-col items-center justify-center px-5 py-12 mx-auto lg:px-20 xl:px-0">
                     <div className="flex flex-col items-center justify-center w-full mb-12 text-center lg:w-2/3">
                         <h1 className="mb-4 text-3xl font-bold text-center text-[#4176FF]">
                             Contact us
                         </h1>
-                        <p className="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-2/3">
+                        <p className="mx-auto text-base font-bold leading-relaxed text-gray-700 lg:w-2/3">
                             We are here to help you with any questions you may have about our products or services. Reach out to us and we'll respond as soon as we can.
                         </p>
                     </div>
