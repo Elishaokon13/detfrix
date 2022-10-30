@@ -1,9 +1,9 @@
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 
-export const ContactUs = () => {
+const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -79,5 +79,8 @@ export const ContactUs = () => {
         </div>
     );
 };
+
+export default Contact;
+
 
 // Path: src\components\Client\Contact.module.css
