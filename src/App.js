@@ -13,6 +13,7 @@ import Signup from './pages/signup/Signup';
 //import AddDeposit from './pages/DashPages/AddDeposit';
 import AddWithdrawal from './pages/DashPages/AddWithdrawal';
 import Profile from './pages/DashPages/Profile';
+import Privacy from './pages/Privacy';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
           <Route path='/login' element={<Signin/>} />
+          <Route path='/privacy' element={<Privacy/>}/>
+
           <Route path='/dashboard' element={<DashBoardLayout/>}>
             
             <Route path='' element={<DashHome/>} />

@@ -1,63 +1,70 @@
+import { FcSettings } from "react-icons/fc";
+
+
 export default function Invest() {
   return (
     <div className="flex flex-col font-[roboto] items-center justify-center w-full h-full">
       Invest
 
-      <div className="flex flex-col-3 gap-5 ml-5 mr-5 items-center justify-center w-50 h-full">
+      <section className='w-full h-full  lg:px-8 lg:py-6 p-0'>
 
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-          </div>
-        </div>
+                    <div className="lg:gap-3 mt-3 h-2/3 pb-10">
+                        <p className="mx-2 font-semibold text-lg pb-6">Select withdrawal method</p>
 
+                        <div className="py-11 px-11 mt-3 h-full lg:bg-gray-200 bg-white rounded-lg lg:w-full" >
+                            <div className=" h-full px-5 gap-5">
+                                <div className="w-full flex justify-center gap-4">
+                                    <div className="items-center px-5 py-2 rounded-sm bg-white w-full lg:border-0 border-[0.1px] border-gray-200 text-center" >
+                                        {/* <FaArrowCircleDown className="w-6 h-5 text-green-500" /> */}
+                                        <div className="w-full">
+                                            
+                                            <ul className="text-sm px-10">
+                                            <li className="py-3">
+                                                <FcSettings className="m-auto"/>
+                                            </li>
+                                                <li className="py-3">
+                                                    <p>COPY TRADE</p>
+                                                </li>
+                                                <li className="py-3">
+                                                    <p>$57.155.40</p>
+                                                </li>
+                                                <li className="py-3 w-1/2 m-auto">
+                                                    <p className="px-5 py-2 bg-white border border-blue-400 text-blue-400 text-center">CONTINUE</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="w-1/2 flex justify-end">
+                                            {/* <FaArrowRight className="h-5 w-5" /> */}
+                                        </div>
+                                    </div>
 
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt=""/>
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-          </div>
-        </div>
+                                    <div className="items-center px-5 py-2 rounded-sm bg-white w-full hover:bg-gray-50 lg:border-0 border-[0.1px] border-gray-200" >
+                                        {/* <FaArrowCircleDown className="w-6 h-5 text-green-500" /> */}
+                                        <div className="w-1/2">
+                                            <p>COPY TRADE</p>
+                                            <ul className="flex flex-row gap-2 text-sm">
+                                                <li>
+                                                    <p>$57.155.40</p>
+                                                </li>
+                                                <li className="text-green-500">
+                                                    <p>+2.34%</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="w-1/2 flex justify-end">
+                                            {/* <FaArrowRight className="h-5 w-5" /> */}
+                                        </div>
+                                    </div>
 
 
+                                </div>
 
-      </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
     </div>
   );
 }
