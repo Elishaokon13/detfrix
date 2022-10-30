@@ -90,7 +90,7 @@ export default function Navbar() {
 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
 
-                    <Link to="/signup" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
+                    <Link to="/register" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
 
                         Start Investing
 

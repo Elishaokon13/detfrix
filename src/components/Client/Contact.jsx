@@ -1,7 +1,22 @@
 import Navbar from "./Navbar"
 import Footer from "./Footer"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-export default function Contact() {
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+    
     return (
         <div>
             <Navbar />
@@ -15,7 +30,7 @@ export default function Contact() {
                             We are here to help you with any questions you may have about our products or services. Reach out to us and we'll respond as soon as we can.
                         </p>
                     </div>
-                    <div className="flex flex-col w-full mb-12 lg:w-2/3">
+                    <form className="flex flex-col w-full mb-12 lg:w-2/3" ref={form} onSubmit={sendEmail}>
                         <div className="relative flex flex-col w-full mb-3">
                             <label htmlFor="name" className="text-sm font-medium leading-relaxed text-gray-700">
                                 Name
@@ -23,7 +38,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 id="name"
-                                name="name"
+                                name="user_name"
                                 placeholder="Enter your name"
                                 className="w-full px-4 py-2 mt-2 text-base text-gray-700 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:bg-white"
                             />
@@ -35,7 +50,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 id="email"
-                                name="email"
+                                name="user_email"
                                 placeholder="Enter your email"
                                 className="w-full px-4 py-2 mt-2 text-base text-gray-700 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 focus:bg-white"
                             />
@@ -53,16 +68,16 @@ export default function Contact() {
                             />
                         </div>
                         <div className="flex justify-end w-full mt-6">
-                            <button className="px-6 py-2 font-medium text-white bg-[#4176FF] rounded-md">
+                            <button className="px-6 py-2 font-medium text-white bg-[#4176FF] rounded-md" type="submit" value="Send">
                                 Send
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <Footer />
         </div>
-    )
-}
+    );
+};
 
 // Path: src\components\Client\Contact.module.css

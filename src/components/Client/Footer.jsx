@@ -22,6 +22,9 @@ export default function Footer() {
                         <li>
                             <a href="/contact" class="hover:underline">Contact Us</a>
                         </li>
+                        <li>
+                            <a href="/about" class="hover:underline">About Us</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
