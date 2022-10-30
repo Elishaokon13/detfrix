@@ -22,7 +22,7 @@ export default function Invest() {
                                             <li className="py-3">
                                                 <FcSettings className="m-auto"/>
                                             </li>
-                                                <li className="py-3">
+                                                <li className="py-3 font-medium">
                                                     <p>COPY TRADE</p>
                                                 </li>
                                                 <li className="py-3">
