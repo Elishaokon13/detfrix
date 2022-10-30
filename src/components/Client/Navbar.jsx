@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
-import Logo from "../../assets/image/DETFRIX.png";
+import Logo from "../../assets/image/DETFRIX2.png";
 
 
 export default function Navbar() {
