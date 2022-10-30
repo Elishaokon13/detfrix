@@ -6,9 +6,9 @@ import Logo from "../../assets/image/DETFRIX2.png";
 
 export default function Navbar() {
     const navigation = [
-        "What we do",
-        "Who we are",
-        "Why invest with us",
+        "About",
+        "Our Plans",
+        "How it Works",
         "Contact us",
     ];
 
@@ -61,7 +61,7 @@ export default function Navbar() {
                                         ))}
 
 
-                                        <Link to="/" className="w-full px-6 py-2 mt-3 font-[roboto] text-center text-white bg-[#4176FF] rounded-md lg:ml-5">
+                                        <Link to="/login" className="w-full px-6 py-2 mt-3 font-[roboto] text-center text-white bg-[#4176FF] rounded-md lg:ml-5">
 
                                             Signin
 
@@ -90,13 +90,13 @@ export default function Navbar() {
 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
 
-                    <Link to="/" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
+                    <Link to="/signup" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
 
                         Start Investing
 
                     </Link>
 
-                    <Link to="/" className="px-6 py-2 font-medium text-[#4176FF]  border-2 border-[#4176FF] rounded-md md:ml-5">
+                    <Link to="/login" className="px-6 py-2 font-medium text-[#4176FF]  border-2 border-[#4176FF] rounded-md md:ml-5">
 
                         Signin
 
