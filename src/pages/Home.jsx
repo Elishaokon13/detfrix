@@ -7,6 +7,8 @@ import Footer from "../components/Client/Footer";
 import Plan from "../components/Client/Plan";
 import Testimonals from "../components/Client/Testimonals";
 import Cookies from "../components/Client/Cookies";
+import Faq from "../components/Client/Faq";
+import HowItWorks from "../components/Client/HowItWorks";
 
 function Home() {
   return (
@@ -14,8 +16,11 @@ function Home() {
       <Navbar />
       <HomeHero />
       <Features />
+      <HowItWorks />
+
+      {/* <Testimonals /> */}
       <Plan />
-      <Testimonals />
+      {/* <Faq /> */}
       <Footer />
     </div>
   );
