@@ -34,7 +34,7 @@ const DepositUsdt = () => {
 
       {
         modal1 ?
-            <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center">
+            <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-20 flex justify-center">
               <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-2/6 shadow h-auto pb-11 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
                 <div className="flex py-8 justify-center">
 
@@ -49,7 +49,7 @@ const DepositUsdt = () => {
                   <input className="font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full" />
                   <p className="text-start pt-5">Wallet address for withdrawal</p>
                   <input className="font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full" />
-                  <p className="bg-blue-800 p-2 mt-4 cursor-pointer text-white" onClick={() => [setModal2(true), setModal1(false)]}>Okay </p>
+                  <p className="bg-blue-500 p-2 mt-4 cursor-pointer text-white" onClick={() => [setModal2(true), setModal1(false)]}>Okay </p>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const DepositUsdt = () => {
                         <li className="w-1/2">Total</li>
                         <li className="w-1/2">$10</li>
                       </ul>
-                      <p className="bg-blue-800 p-2 mt-4 text-white cursor-pointer" onClick={() => [setModal3(true), setModal2(false), setModal1(false)]}>Deposit</p>
+                      <p className="bg-blue-500 p-2 mt-4 text-white cursor-pointer" onClick={() => [setModal3(true), setModal2(false), setModal1(false)]}>Deposit</p>
                     </div>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ const DepositUsdt = () => {
                     {copyStatus && (
                       <p className="text-blue-400 ">text copied to clipboard!</p>
                     )}
-                    <p className="bg-blue-800 p-2 mt-4 cursor-pointer text-white" onClick={() => [setModal3(false), setModal1(false), setModal2(false)]}>Confirm Deposit</p>
+                    <p className="bg-blue-500 p-2 mt-4 cursor-pointer text-white" onClick={() => [setModal3(false), setModal1(false), setModal2(false)]}>Confirm Deposit</p>
                   </div>
                 </div>
                 </div>

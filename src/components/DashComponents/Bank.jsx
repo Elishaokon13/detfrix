@@ -5,6 +5,7 @@ const Bank = () => {
   const [modal1, setModal1] = useState(false);
   const [modal2, setModal2] = useState(false);
 
+
   return (
     <div>
       {modal1 ?

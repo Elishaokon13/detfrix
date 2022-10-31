@@ -11,7 +11,7 @@ const Usdt = () => {
       {modal1 ?
         <p></p>
         :
-        <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center">
+        <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-20 flex justify-center">
 
           {
             modal2 ?
@@ -37,7 +37,7 @@ const Usdt = () => {
                     <li className="w-1/2">Total</li>
                     <li className="w-1/2">$10</li>
                   </ul>
-                  <p className="bg-blue-800 p-2 mt-4 rounded text-white" onClick={() => setModal1(!modal1)}>Confirm Withdrawal</p>
+                  <p className="bg-blue-500 p-2 mt-4 rounded text-white" onClick={() => setModal1(!modal1)}>Confirm Withdrawal</p>
                 </div>
               </div>
               :
@@ -54,7 +54,7 @@ const Usdt = () => {
                   <p className="text-start">Input amount to withdraw in USDT</p>
                   <input className="font-medium text-sm border-2 rounded-md p-1 focus:outline-none selection:bg-transparent w-full" />
                   
-                  <p className="bg-blue-800 p-2 rounded mt-4 text-white" onClick={() => setModal2(!modal2)}>Withdraw</p>
+                  <p className="bg-blue-500 p-2 rounded mt-4 text-white" onClick={() => setModal2(!modal2)}>Withdraw</p>
                 </div>
               </div>
           }
