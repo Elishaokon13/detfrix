@@ -10,7 +10,7 @@ const Bank = () => {
             {modal1 ?
                 <p></p>
                 :
-                <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center">
+                <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-20 flex justify-center">
 
                     {
                         modal2 ?

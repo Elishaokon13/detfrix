@@ -14,6 +14,8 @@ import Signup from './pages/signup/Signup';
 import AddWithdrawal from './pages/DashPages/AddWithdrawal';
 import Profile from './pages/DashPages/Profile';
 import Privacy from './pages/Privacy';
+import CopyTrade from './components/DashComponents/CopyTrade';
+import InvestmentPacks from './components/DashComponents/InvestmentPacks';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
             {/*<Route path='add-deposit' element={<AddDeposit/>} /> */}
             <Route path='deposit/:id' element={<Deposit/>} />
             <Route path='invest' element={<Invest/>} />
+            <Route path='copytrade' element={<CopyTrade/>}/>
+            <Route path='investmentpacks' element={<InvestmentPacks/>}/>
             <Route path='withdraw' element={<Withdraw/>} />
             <Route path='add-withdraw' element={<AddWithdrawal/>} />
             <Route path='withdraw/:id' element={<Withdraw/>} />
