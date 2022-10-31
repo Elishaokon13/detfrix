@@ -29,7 +29,7 @@ const DepositUsdt = () => {
   }
 
   return (
-    <div>
+    <div className="font-roboto">
           {/* <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center"> */}
 
       {
@@ -60,7 +60,7 @@ const DepositUsdt = () => {
       {/* beginning of second modal */}
       {
               modal2 ?
-                <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center">
+                <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-20 flex justify-center">
                   <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-2/6 shadow h-auto pb-11 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
                     <div className="flex py-8 justify-center">
 
