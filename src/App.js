@@ -15,6 +15,8 @@ import AddWithdrawal from './pages/DashPages/AddWithdrawal';
 import Profile from './pages/DashPages/Profile';
 
 import Privacy from './pages/Privacy';
+import CopyTrade from './components/DashComponents/CopyTrade';
+import InvestmentPacks from './components/DashComponents/InvestmentPacks';
 
 function App() {
   return (
@@ -22,8 +24,8 @@ function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<AboutUs />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/about" element={<AboutUs />} /> */}
           <Route path="/register" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
           <Route path='/login' element={<Signin/>} />
