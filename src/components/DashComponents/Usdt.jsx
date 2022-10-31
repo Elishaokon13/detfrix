@@ -7,7 +7,7 @@ const Usdt = () => {
   const [modal2, setModal2] = useState(false);
 
   return (
-    <div>
+    <div className="font-roboto">
       {modal1 ?
         <p></p>
         :
@@ -15,7 +15,7 @@ const Usdt = () => {
 
           {
             modal2 ?
-              <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-2/6 shadow h-1/2 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
+            <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-2/6 shadow h-auto pb-11 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
                 <div className="flex py-8 justify-center">
 
                   <p className="w-full text-start text-base lg:text-sm">Review</p>
@@ -41,12 +41,15 @@ const Usdt = () => {
                 </div>
               </div>
               :
-              <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-2/6 shadow h-1/2 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
+              <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-2/6 shadow h-auto pb-11 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
+                
+
+
                 <div className="flex py-8 justify-center">
 
-                  <p className="w-full text-start text-base text-[700] lg:text-sm">Withdrawal Information</p>
+                  <p className="w-full text-start text-base lg:text-sm">withdrawal information</p>
                   <div className="w-1/2 flex text-end justify-end">
-                    <FaXbox onClick={() => setModal1(!modal1)} />
+                    <FaXbox className="cursor-pointer" onClick={() => setModal1(!modal1)} />
 
                   </div>
                 </div>

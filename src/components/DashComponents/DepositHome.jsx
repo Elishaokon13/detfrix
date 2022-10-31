@@ -7,7 +7,7 @@ import DepositUsdt from "./DepositUsdt";
 function DepositHome() {
     const [modal1, setModal1] = useState(false);
     return (
-        <div>
+        <div className="font-roboto">
 
             <section>
                 <section className='w-full h-full  lg:px-8 lg:py-6 p-0'>

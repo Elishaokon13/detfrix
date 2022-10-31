@@ -26,10 +26,8 @@ export default function CopyTrade() {
                                                 <input className="border border-gray-400 rounded-sm mb-4 px-3 h-8 focus:outline-none selection:bg-transparent" type={Text}/>
                                                 <label>Broker</label>
                                                 <select className="border border-gray-400 rounded-sm mb-4 px-3 h-8 focus:outline-none selection:bg-transparent focus:border-gray-400">
-                                                    <option value={'opt1'}>opt1</option>
-                                                    <option value={'opt1'}>opt1</option>
-                                                    <option value={'opt1'}>opt1</option>
-                                                    <option value={'opt1'}>opt1</option>
+                                                    <option value={'KOT4X'}>KOT4X</option>
+                                                    <option value={"HUGO'S WAY"}>HUGO'S WAY</option>
                                                 </select>
                                                 <label>MT4 Equity/Balance</label>
                                                 <input className="border border-gray-400 rounded-sm mb-4 px-3 h-8 focus:outline-none selection:bg-transparent" type={Text} placeholder="$2000 above"/>
@@ -54,7 +52,7 @@ export default function CopyTrade() {
 
                     </div>
                 </section>
-                <section>
+                <section className="w-full">
                     <Bottomnav />
                 </section>
                 <section>

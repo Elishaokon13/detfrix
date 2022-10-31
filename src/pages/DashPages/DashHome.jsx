@@ -5,7 +5,7 @@ import Dashboard from "../../components/DashComponents/Dashboard";
 function DashHome() {
 
    return (
-      <div>
+      <div className="font-roboto">
 
          {/* for testing purposes */}
          {/* <ActivityBox /> */}   

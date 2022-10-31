@@ -5,7 +5,7 @@ import ProfilePage from "../../components/DashComponents/ProfilePage";
 function Profile() {
 
    return (
-      <div>
+      <div className="font-roboto">
         
 
             <ProfilePage/>

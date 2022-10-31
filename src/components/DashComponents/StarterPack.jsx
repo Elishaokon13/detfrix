@@ -23,7 +23,7 @@ const StarterPack = () => {
               <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-[27%] text-sm shadow h-auto pb-11 bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
                 <div className="flex py-8 justify-center">
                 <div className="w-full">
-                    <p className=" text-start text-base lg:text-2xl text-black">Starter pack</p>
+                    <p className=" text-start lg:font-medium font-semibold text-xl lg:text-2xl text-black">Starter pack</p>
                     <p className=" text-start text-base lg:text-sm text-black">$1000 - $4,999</p>
                 </div>
                   <div className="w-1/2 flex text-end justify-end">
@@ -33,7 +33,7 @@ const StarterPack = () => {
                 </div>
                 <div className="w-full text-center justify-center">
                   <label className="text-center py-7 text-base">Input amount to invest</label>
-                  <input type={Text} placeholder='$0.00' className="mt-2 border-0 text-center h-7 text-2xl"/>
+                  <input type={Text} placeholder='$0.00' className="mt-2 border-0 text-center h-7 text-2xl focus:outline-none selection:bg-transparent"/>
                   <p className="mt-8 bg-blue-500 p-2 cursor-pointer text-white" onClick={() => [setModal2(true), setModal1(false)]}>Buy pack </p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const StarterPack = () => {
       {/* beginning of second modal */}
       {
               modal2 ?
-                <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center">
+                <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-20 flex justify-center">
                   <div className="fixed bottom-0 lg:bottom-1/4 w-full lg:w-[27%] shadow h-auto bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
                     
                 <div className="w-full text-center justify-center py-10">
@@ -65,7 +65,7 @@ const StarterPack = () => {
         {/* beginning of third modal */}
         {
               modal3 ?
-              <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-5 flex justify-center">
+              <div className="fixed bottom-0 left-0 w-full shadow h-full bg-black bg-opacity-20 flex justify-center">
                 
                 <div className="fixed bottom-0 lg:bottom-1/4 w-full h-auto pb-11 lg:w-[27%] shadow bg-white border-t-2 border-solid border-gray-200 rounded-t-3xl px-9">
 
