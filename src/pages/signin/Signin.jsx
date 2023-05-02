@@ -25,7 +25,7 @@ export default function Signin() {
     });
 
   if (isLoggedIn) {
-    return <Navigate to="/dashboard" />;
+    return <Navigate href="/dashboard" />;
   }
   }
 
@@ -49,7 +49,7 @@ export default function Signin() {
             
               <button type="submit" onClick={handleLogin} class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Sign In</button>
               <p class="text-sm font-light text-white-500 ">
-                Don't have an account? <a href="/register" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Signup here</a>
+                Don't have an account? <Link href="/register" class="font-medium text-blue-600 hover:underline dark:text-blue-500">Signup here</Link>
               </p>
             </div>
         </div>

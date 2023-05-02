@@ -32,7 +32,7 @@ function HomeHero() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <Link
-                    to="/register"
+                    href="/register"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:py-4 md:px-10 md:text-lg"
                   >
                     Get started
@@ -40,7 +40,7 @@ function HomeHero() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <Link
-                    to="#"
+                    href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-100 px-8 py-3 text-base font-medium text-blue-600 hover:bg-blue-200 md:py-4 md:px-10 md:text-lg"
                   >
                     Live demo

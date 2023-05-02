@@ -175,7 +175,7 @@ function Signup() {
                       href="#"
                     >
                       Terms and Conditions
-                    </a>
+                    </Link>
                   </label>
                 </div>
               </div>
@@ -192,7 +192,7 @@ function Signup() {
                   class="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 >
                   Login here
-                </a>
+                </Link>
               </p>
 
               {message && (

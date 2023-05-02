@@ -15,7 +15,7 @@ const Sidebar = ({ toggle, isToggled }) => {
       <Link
         className={`item ${match ? "bg-blue-600 rounded-md" : ""
           } text-[20px] font-[700] text-white  w-full my-[10px] p-3`}
-        to={to}
+        href={to}
         {...props}
         onClick={handleToggle}
       >
@@ -55,7 +55,7 @@ const Sidebar = ({ toggle, isToggled }) => {
       <div className="text-center font-[roboto] font-[800] text-[25px] text-white">
         <ul className="flex lg:justify-center justify-between items-center px-2">
           <li>
-            <Link to='/dashboard/'>Detfrix</Link>
+            <Link href='/dashboard/'>Detfrix</Link>
           </li>
           <li className="lg:hidden">
             <FaXbox onClick={() => isToggled(!toggle)} />
@@ -64,7 +64,7 @@ const Sidebar = ({ toggle, isToggled }) => {
       </div>
       <div className="mt-[10px] md:mt-[20px] flex flex-col w-full px-5">
         {navArr.map(({ icon, name, to }) => (
-          <CustomLink to={to} key={to}>
+          <CustomLink href={to} key={to}>
             <div className="flex text-[15px] justify-center text-center items-center font-[roboto]">
               <div>
                 {icon}

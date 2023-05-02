@@ -1,25 +1,25 @@
-import React from "react";
-import HomeHero from "./components/HomeHero";
-import Navbar from "./components/Navbar";
+import About from "./components/about";
+import CTA from "./components/cta";
+import Faq from "./components/faqs";
+import Features from "./components/features";
+import Footer from "./components/footer";
+import Hero from "./components/hero";
+import Services from "./components/services";
+import Socials from "./components/socials";
+import Stats from "./components/stats";
 
-import Footer from "./components/Footer";
-import Plan from "./components/Plan";
-import HowItWorks from "./components/HowItWorks";
-
-function Home() {
+export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <HomeHero />
-      <Features />
-      <HowItWorks />
-
-      {/* <Testimonals /> */}
-      <Plan />
-      {/* <Faq /> */}
-      <Footer />
+    <div className="bg-[#f0f8ff] font-Josefin">
+      <Hero/>
+      <Services/>
+      <About/>
+      <Features/>
+      <Stats/>
+      <Socials/>
+      <Faq/>
+      <CTA/>
+      <Footer/>
     </div>
-  );
+  )
 }
-
-export default Home;

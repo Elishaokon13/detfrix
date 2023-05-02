@@ -14,7 +14,7 @@ const Bottomnav = ({ toggle, isToggled }) => {
         className={`item ${
           match ? "text-blue-700" : ""
         } text-[20px] font-[700]   w-full my-[10px] flex justify-center`}
-        to={to}
+        href={to}
         {...props}
         onClick={handleToggle}
       >
@@ -50,7 +50,7 @@ const Bottomnav = ({ toggle, isToggled }) => {
 
       <div className="flex w-full text-center justify-center">
         {navArr.map(({ icon, name, to }) => (
-          <CustomLink to={to} key={to}>
+          <CustomLink href={to} key={to}>
             <div className="flex text-[15px] items-center font-[roboto]">
               <div className="text-sm">
                 {icon}

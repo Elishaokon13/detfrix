@@ -32,7 +32,7 @@ export default function Invest() {
                                                     <p>Use our trade replicating server for two wekkly profit of $1000</p>
                                                 </li>
                                                 <li className="py-5 w-1/2 m-auto">
-                                                <Link to='/dashboard/copytrade'>
+                                                <Link href='/dashboard/copytrade'>
                                                     <p className="px-5 py-2 bg-white border border-blue-400 text-blue-400 text-center cursor-pointer">CONTINUE</p>
                                                     </Link>
                                                 </li>
@@ -58,7 +58,7 @@ export default function Invest() {
                                                     <p>Choose any of our high rewarding investment packs.</p>
                                                 </li>
                                                 <li className="py-5 w-1/2 m-auto">
-                                                <Link to='/dashboard/investmentpacks'>
+                                                <Link href='/dashboard/investmentpacks'>
                                                     <p className="px-5 py-2 bg-white border border-blue-400 text-blue-400 text-center cursor-pointer">CONTINUE</p>
                                                 </Link>
                                                 </li>

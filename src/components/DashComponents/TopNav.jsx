@@ -10,7 +10,7 @@ function TopNav({ toggle, isToggled }) {
       <div className='py-5 w-full'>
         <ul className='flex justify-between'>
           <li>Dashboard</li>
-          <Link to="profile">
+          <Link href="profile">
             <li><FaRegUserCircle/></li>
           </Link>
         </ul>

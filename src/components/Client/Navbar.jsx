@@ -20,7 +20,7 @@ export default function Navbar() {
                     {({ open }) => (
                         <>
                             <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                                <Link to="/" className="flex items-center space-x-2 text-2xl font-medium text-[#4176FF] dark:text-blue-100">
+                                <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-[#4176FF] dark:text-blue-100">
 
                                     <img src={Logo} alt="logo" className="w-40" />
 
@@ -53,7 +53,7 @@ export default function Navbar() {
                                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                                     <>
                                         {navigation.map((item, index) => (
-                                            <Link key={index} to="/" className="w-full font-medium font-bold px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-blue-300 hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-blue-800 focus:outline-none dark:focus:bg-trueblue-700">
+                                            <Link key={index} href="/" className="w-full font-medium font-bold px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-blue-300 hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 dark:focus:bg-blue-800 focus:outline-none dark:focus:bg-trueblue-700">
 
                                                 {item}
 
@@ -61,7 +61,7 @@ export default function Navbar() {
                                         ))}
 
 
-                                        <Link to="/login" className="w-full px-6 py-2 mt-3 font-[roboto] text-center text-white bg-[#4176FF] rounded-md lg:ml-5">
+                                        <Link href="/login" className="w-full px-6 py-2 mt-3 font-[roboto] text-center text-white bg-[#4176FF] rounded-md lg:ml-5">
 
                                             Signin
 
@@ -78,7 +78,7 @@ export default function Navbar() {
                     <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
                         {navigation.map((menu, index) => (
                             <li className="mr-3 nav__item" key={index}>
-                                <Link to="/" className="inline-block font-medium px-4 py-2 text-base font-bold text-gray-600 no-underline rounded-md dark:text-blue-200 hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-blue-800">
+                                <Link href="/" className="inline-block font-medium px-4 py-2 text-base font-bold text-gray-600 no-underline rounded-md dark:text-blue-200 hover:text-blue-500 focus:text-blue-500 focus:bg-blue-100 focus:outline-none dark:focus:bg-blue-800">
 
                                     {menu}
 
@@ -90,13 +90,13 @@ export default function Navbar() {
 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
 
-                    <Link to="/register" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
+                    <Link href="/register" className="px-6 py-2 bg-[#4176FF] font-medium text-white rounded-md md:ml-5">
 
                         Start Investing
 
                     </Link>
 
-                    <Link to="/login" className="px-6 py-2 font-medium text-[#4176FF]  border-2 border-[#4176FF] rounded-md md:ml-5">
+                    <Link href="/login" className="px-6 py-2 font-medium text-[#4176FF]  border-2 border-[#4176FF] rounded-md md:ml-5">
 
                         Signin
 

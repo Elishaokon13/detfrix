@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 function Faq() {
     const [show, setShow] = useState(false);
@@ -67,7 +68,7 @@ function Faq() {
                                                 <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
                                             </div>
                                         </div>
-                                        <a className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
+                                        <Link className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
                                             <p>Show All</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -77,7 +78,7 @@ function Faq() {
                                                     <line x1={15} y1={8} x2={19} y2={12} />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
@@ -129,7 +130,7 @@ function Faq() {
                                                 <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy?</h4>
                                             </div>
                                         </div>
-                                        <a className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
+                                        <Link className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
                                             <p>Show All</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -139,7 +140,7 @@ function Faq() {
                                                     <line x1={15} y1={8} x2={19} y2={12} />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
@@ -183,7 +184,7 @@ function Faq() {
                                                 <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
                                             </div>
                                         </div>
-                                        <a className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
+                                        <Link className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
                                             <p>Show All</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -193,7 +194,7 @@ function Faq() {
                                                     <line x1={15} y1={8} x2={19} y2={12} />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
@@ -237,7 +238,7 @@ function Faq() {
                                                 <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
                                             </div>
                                         </div>
-                                        <a className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
+                                        <Link className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
                                             <p>Show All</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -247,7 +248,7 @@ function Faq() {
                                                     <line x1={15} y1={8} x2={19} y2={12} />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
@@ -283,7 +284,7 @@ function Faq() {
                                                 <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">I didnt get a confirmation email, what should I do next</h4>
                                             </div>
                                         </div>
-                                        <a className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
+                                        <Link className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
                                             <p>Show All</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -293,7 +294,7 @@ function Faq() {
                                                     <line x1={15} y1={8} x2={19} y2={12} />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
@@ -337,7 +338,7 @@ function Faq() {
                                                 <h4 className="text-md text-gray-900 dark:text-gray-100 pl-4">What is the refund policy if I have to cancel during the month</h4>
                                             </div>
                                         </div>
-                                        <a className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
+                                        <Link className="hover:text-indigo-500 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href="#">
                                             <p>Show All</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -347,7 +348,7 @@ function Faq() {
                                                     <line x1={15} y1={8} x2={19} y2={12} />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
